@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:background="@drawable/ticket_bg"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:stretchColumns="1"
+        >
+        <!--订单号-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_margin="@dimen/table_layout_margin"
+                android:background="@color/tablelayout_detail_bg"
+                android:gravity="end"
+                android:padding="@dimen/table_layout_padding"
+                android:text="订单号："
+                />
+
+            <TextView
+                android:id="@+id/ticket_id_ticket_layout"
+                android:layout_margin="@dimen/table_layout_margin"
+                android:background="@color/tablelayout_detail_bg"
+                android:padding="@dimen/table_layout_padding"
+                tools:text="120342030423"
+                />
+        </TableRow>
+        <!--身份证号码-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_margin="@dimen/table_layout_margin"
+                android:background="@color/tablelayout_detail_bg"
+                android:gravity="end"
+                android:padding="@dimen/table_layout_padding"
+                android:text="身份证："
+                />
+
+            <TextView
+                android:id="@+id/id_card_ticket_layout"
+                android:layout_margin="@dimen/table_layout_margin"
+                android:background="@color/tablelayout_detail_bg"
+                android:padding="@dimen/table_layout_padding"
+                tools:text="123412342341234"
+                />
+        </TableRow>
+        <!--付款人-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_margin="@dimen/table_layout_margin"
+                android:background="@color/tablelayout_detail_bg"
+                android:gravity="end"
+                android:padding="@dimen/table_layout_padding"
+                android:text="付款人："
+
+                />
+
+            <TextView
+                android:id="@+id/ticket_man_text_view_ticket_layout"
+                android:layout_margin="@dimen/table_layout_margin"
+                android:background="@color/tablelayout_detail_bg"
+                android:padding="@dimen/table_layout_padding"
+                tools:text="TestUser"
+                />
+        </TableRow>
+        <!--车次号-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_margin="@dimen/table_layout_margin"
+                android:background="@color/tablelayout_detail_bg"
+                android:gravity="end"
+                android:padding="@dimen/table_layout_padding"
+                android:text="车次号："
+
+                />
+
+            <TextView
+                android:id="@+id/train_id_text_view_ticket_layout"
+                android:layout_margin="@dimen/table_layout_margin"
+                android:background="@color/tablelayout_detail_bg"
+                android:padding="@dimen/table_layout_padding"
+                tools:text="G401"
+                />
+        </TableRow>
+        <!--起点-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_margin="@dimen/table_layout_margin"
+                android:background="@color/tablelayout_detail_bg"
+                android:gravity="end"
+                android:padding="@dimen/table_layout_padding"
+                android:text="起点："
+
+                />
+
+            <TextView
+                android:id="@+id/source_text_view_ticket_layout"
+                android:layout_margin="@dimen/table_layout_margin"
+                android:background="@color/tablelayout_detail_bg"
+                android:padding="@dimen/table_layout_padding"
+                tools:text="广州"
+                />
+        </TableRow>
+        <!--终点-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_margin="@dimen/table_layout_margin"
+                android:background="@color/tablelayout_detail_bg"
+                android:gravity="end"
+                android:padding="@dimen/table_layout_padding"
+                android:text="终点："
+                />
+
+            <TextView
+                android:id="@+id/destination_text_view_ticket_layout"
+                android:layout_margin="@dimen/table_layout_margin"
+                android:background="@color/tablelayout_detail_bg"
+                android:padding="@dimen/table_layout_padding"
+                tools:text="佛冈"
+                />
+        </TableRow>
+        <!--出发时间-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_margin="@dimen/table_layout_margin"
+                android:background="@color/tablelayout_detail_bg"
+                android:gravity="end"
+                android:padding="@dimen/table_layout_padding"
+                android:text="出发时间："
+                />
+
+            <TextView
+                android:id="@+id/start_time_text_view_ticket_layout"
+                android:layout_margin="@dimen/table_layout_margin"
+                android:background="@color/tablelayout_detail_bg"
+                android:padding="@dimen/table_layout_padding"
+                tools:text="2017-05-25 20:17"
+                />
+        </TableRow>
+        <!--到达时间-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_margin="@dimen/table_layout_margin"
+                android:background="@color/tablelayout_detail_bg"
+                android:gravity="end"
+                android:padding="@dimen/table_layout_padding"
+                android:text="到达时间："
+                />
+
+            <TextView
+                android:id="@+id/reach_time_text_view_ticket_layout"
+                android:layout_margin="@dimen/table_layout_margin"
+                android:background="@color/tablelayout_detail_bg"
+                android:padding="@dimen/table_layout_padding"
+                tools:text="2017-05-25 20:17"
+                />
+        </TableRow>
+        <!--车厢号-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_margin="@dimen/table_layout_margin"
+                android:background="@color/tablelayout_detail_bg"
+                android:gravity="end"
+                android:padding="@dimen/table_layout_padding"
+                android:text="车厢号："
+                />
+
+            <TextView
+                android:id="@+id/carriage_num_text_view_ticket_layout"
+                android:layout_margin="@dimen/table_layout_margin"
+                android:background="@color/tablelayout_detail_bg"
+                android:padding="@dimen/table_layout_padding"
+                tools:text="06"
+                />
+        </TableRow>
+        <!--座位号-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_margin="@dimen/table_layout_margin"
+                android:background="@color/tablelayout_detail_bg"
+                android:gravity="end"
+                android:padding="@dimen/table_layout_padding"
+                android:text="座位号："
+                />
+
+            <TextView
+                android:id="@+id/seat_num_text_view_ticket_layout"
+                android:layout_margin="@dimen/table_layout_margin"
+                android:background="@color/tablelayout_detail_bg"
+                android:padding="@dimen/table_layout_padding"
+                tools:text="39"
+                />
+        </TableRow>
+        <!--价格-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_margin="@dimen/table_layout_margin"
+                android:background="@color/tablelayout_detail_bg"
+                android:gravity="end"
+                android:padding="@dimen/table_layout_padding"
+                android:text="价格："
+                />
+
+            <TextView
+                android:id="@+id/price_text_view_ticket_layout"
+                android:layout_margin="@dimen/table_layout_margin"
+                android:background="@color/tablelayout_detail_bg"
+                android:padding="@dimen/table_layout_padding"
+                tools:text="30"
+                />
+        </TableRow>
+        <!--下单时间-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_margin="@dimen/table_layout_margin"
+                android:background="@color/tablelayout_detail_bg"
+                android:gravity="end"
+                android:padding="@dimen/table_layout_padding"
+                android:text="下单时间："
+                />
+
+            <TextView
+                android:id="@+id/order_time_text_view_ticket_layout"
+                android:layout_margin="@dimen/table_layout_margin"
+                android:background="@color/tablelayout_detail_bg"
+                android:padding="@dimen/table_layout_padding"
+                tools:text="2017-05-25 20:17"
+                />
+        </TableRow>
+        <!--退票时间-->
+        <TableRow
+            android:id="@+id/refunds_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_margin="@dimen/table_layout_margin"
+                android:background="@color/tablelayout_detail_bg"
+                android:gravity="end"
+                android:padding="@dimen/table_layout_padding"
+                android:text="退票时间："
+                />
+
+            <TextView
+                android:id="@+id/refunds_time_text_view_ticket_layout"
+                android:layout_margin="@dimen/table_layout_margin"
+                android:background="@color/tablelayout_detail_bg"
+                android:padding="@dimen/table_layout_padding"
+                tools:text="2017-05-25 20:17"
+                />
+        </TableRow>
+        <!--状态-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_margin="@dimen/table_layout_margin"
+                android:background="@color/tablelayout_detail_bg"
+                android:gravity="end"
+                android:padding="@dimen/table_layout_padding"
+                android:text="状态："
+                />
+
+            <TextView
+                android:id="@+id/status_text_view_ticket_layout"
+                android:layout_margin="@dimen/table_layout_margin"
+                android:background="@color/tablelayout_detail_bg"
+                android:padding="@dimen/table_layout_padding"
+                tools:text="已售"
+                />
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>

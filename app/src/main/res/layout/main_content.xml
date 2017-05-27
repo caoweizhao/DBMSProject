@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <FrameLayout
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:fitsSystemWindows="true"
+
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:fitsSystemWindows="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/train"
+            />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tb"
+            style="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_margin="10dp"
+            android:background="@drawable/toolbar_ripple"
+            app:title="班次查询"
+            app:titleTextColor="#a0050202"
+            />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/root_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/img"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        >
+    </LinearLayout>
+</RelativeLayout>

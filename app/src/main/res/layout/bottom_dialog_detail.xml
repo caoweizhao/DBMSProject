@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="车次详情"
+        android:textSize="20sp"
+        />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            tools:context=".view.TrainScheduleActivity"
+            >
+
+            <!--车次号-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@integer/text_weight"
+                    android:gravity="end"
+                    android:text="车次号："
+                    android:textColor="@color/bottom_sheet_text_color"
+                    />
+
+                <EditText
+                    android:id="@+id/identity_bottom_sheet"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@integer/edit_text_weight"
+                    android:padding="10dp"
+                    android:transitionName="identity"
+                    android:text="G401"
+                    />
+            </LinearLayout>
+
+            <!--起点-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@integer/text_weight"
+                    android:gravity="end"
+                    android:text="起点："
+                    android:textColor="@color/bottom_sheet_text_color"
+                    />
+
+                <EditText
+                    android:id="@+id/source_bottom_sheet"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@integer/edit_text_weight"
+                    android:padding="10dp"
+                    android:transitionName="source"
+                    android:text="广州"
+                    />
+            </LinearLayout>
+
+            <!--终点-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@integer/text_weight"
+                    android:gravity="end"
+                    android:text="终点："
+                    android:textColor="@color/bottom_sheet_text_color"
+                    />
+
+                <EditText
+                    android:id="@+id/destination_bottom_sheet"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@integer/edit_text_weight"
+                    android:padding="10dp"
+                    android:transitionName="destination"
+                    android:text="佛冈"
+                    />
+            </LinearLayout>
+
+            <!--发车时间-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@integer/text_weight"
+                    android:gravity="end"
+                    android:text="发车时间："
+                    android:textColor="@color/bottom_sheet_text_color"
+                    />
+
+                <TextView
+                    android:id="@+id/start_time_bottom_sheet"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@integer/edit_text_weight"
+                    android:padding="10dp"
+                    android:transitionName="startDate"
+                    android:gravity="center_vertical"
+                    android:drawableEnd="@drawable/ic_date"
+                    android:text="2017-05-24 7:35"
+                    />
+            </LinearLayout>
+
+            <!--到达时间-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@integer/text_weight"
+                    android:gravity="end"
+                    android:text="到达时间："
+                    android:textColor="@color/bottom_sheet_text_color"
+                    />
+
+                <TextView
+                    android:id="@+id/arrive_time_bottom_sheet"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@integer/edit_text_weight"
+                    android:padding="10dp"
+                    android:transitionName="reachDate"
+                    android:gravity="center_vertical"
+                    android:drawableEnd="@drawable/ic_date"
+                    android:text="2017-05-24 11:00"
+                    />
+            </LinearLayout>
+
+            <!--余量-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@integer/text_weight"
+                    android:gravity="end"
+                    android:text="余量："
+                    android:textColor="@color/bottom_sheet_text_color"
+                    />
+
+                <TextView
+                    android:id="@+id/rest_bottom_sheet"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="30"
+                    android:transitionName="rest"
+                    />
+
+                <Button
+                    android:id="@+id/detail_of_seat_bottom_sheet"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="座位详情"
+                    android:textColor="@color/bottom_sheet_button_text_color"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/sale_in_bottom_sheet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/ripple"
+            android:text="购票"
+            android:textColor="@color/bottom_sheet_button_text_color"
+            />
+
+        <Button
+            android:id="@+id/modify_in_bottom_sheet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/ripple"
+            android:text="修改"
+            android:textColor="@color/bottom_sheet_button_text_color"/>
+    </LinearLayout>
+</LinearLayout>

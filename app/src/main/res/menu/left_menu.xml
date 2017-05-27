@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="single"
+        android:enabled="true">
+        <item
+            android:id="@+id/search_train_page"
+            android:icon="@drawable/ic_search_train"
+            android:title="班次查询"
+            />
+        <item
+            android:id="@+id/retrieve_ticket_page"
+            android:icon="@drawable/ic_retrieve_ticket"
+            android:title="退票"/>
+    </group>
+
+</menu>

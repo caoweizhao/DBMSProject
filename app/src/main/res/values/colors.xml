@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2a8e9c</color>
+    <color name="colorPrimaryDark">#006bb2</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="status_color">#39AEC2</color>
+
+    <color name="text_color">#c1c1cc</color>
+
+    <color name="bottom_sheet_text_color">#006bb2</color>
+    <color name="bottom_sheet_button_text_color">#ffffff</color>
+
+    <color name="tablayout_desc_bg">#eee</color>
+    <color name="tablelayout_detail_bg">#eee</color>
+
+    <color name="seat_sale">#eee</color>
+    <color name="seat_not_sale">#ffab</color>
+
+    <color name="test">#bb000000</color>
+</resources>

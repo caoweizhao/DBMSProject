@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_in_sale_layout"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true"
+        app:title="购票信息"
+        />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/ticket_bg"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            tools:context=".view.TrainScheduleActivity"
+            >
+
+            <!--车次号-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@integer/text_weight"
+                    android:gravity="end"
+                    android:text="车次号："
+                    android:textColor="@color/bottom_sheet_text_color"
+                    />
+
+                <TextView
+                    android:id="@+id/identity_sale_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@integer/edit_text_weight"
+                    android:padding="10dp"
+                    android:text="G401"
+                    android:transitionName="identity"
+                    />
+            </LinearLayout>
+
+            <!--起点-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@integer/text_weight"
+                    android:gravity="end"
+                    android:text="起点："
+                    android:textColor="@color/bottom_sheet_text_color"
+                    />
+
+                <TextView
+                    android:id="@+id/source_sale_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@integer/edit_text_weight"
+                    android:padding="10dp"
+                    android:text="广州"
+                    android:transitionName="source"
+                    />
+            </LinearLayout>
+
+            <!--终点-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@integer/text_weight"
+                    android:gravity="end"
+                    android:text="终点："
+                    android:textColor="@color/bottom_sheet_text_color"
+                    />
+
+                <TextView
+                    android:id="@+id/destination_sale_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@integer/edit_text_weight"
+                    android:padding="10dp"
+                    android:text="佛冈"
+                    android:transitionName="destination"
+                    />
+            </LinearLayout>
+
+            <!--发车时间-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@integer/text_weight"
+                    android:gravity="end"
+                    android:text="发车时间："
+                    android:textColor="@color/bottom_sheet_text_color"
+                    />
+
+                <TextView
+                    android:id="@+id/start_time_sale_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@integer/edit_text_weight"
+                    android:padding="10dp"
+                    android:text="2017-05-24 7:35"
+                    android:transitionName="startDate"
+                    />
+            </LinearLayout>
+
+            <!--到达时间-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@integer/text_weight"
+                    android:gravity="end"
+                    android:text="到达时间："
+                    android:textColor="@color/bottom_sheet_text_color"
+                    />
+
+                <TextView
+                    android:id="@+id/arrive_time_sale_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@integer/edit_text_weight"
+                    android:padding="10dp"
+                    android:text="2017-05-24 11:00"
+                    android:transitionName="reachDate"
+                    />
+            </LinearLayout>
+
+            <!--余量-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@integer/text_weight"
+                    android:gravity="end"
+                    android:text="余量："
+                    android:textColor="@color/bottom_sheet_text_color"
+                    />
+
+                <TextView
+                    android:id="@+id/rest_sale_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="10dp"
+                    android:text="30"
+                    android:transitionName="rest"
+                    />
+
+            </LinearLayout>
+            <!--票价-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@integer/text_weight"
+                    android:gravity="end"
+                    android:text="票价："
+                    android:textColor="@color/bottom_sheet_text_color"
+                    />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/price_input_layout_in_sale"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    app:hintAnimationEnabled="true"
+                    app:hintEnabled="true"
+                    >
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text="30"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+            <!--身份证-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@integer/text_weight"
+                    android:gravity="end"
+                    android:text="身份证号："
+                    android:textColor="@color/bottom_sheet_text_color"
+                    />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/id_card_text_input_layout_in_sale"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:hint="身份证号"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="18"
+                    app:counterOverflowTextAppearance="@style/TextAppearance.Design.Error"
+                    app:errorEnabled="true"
+                    app:hintAnimationEnabled="true"
+                    app:hintEnabled="true"
+                    >
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+            <!--姓名-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@integer/text_weight"
+                    android:gravity="end"
+                    android:text="姓名："
+                    android:textColor="@color/bottom_sheet_text_color"
+                    />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ticket_man_input_layout_in_sale"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:hint="姓名"
+                    app:hintAnimationEnabled="true"
+                    app:hintEnabled="true"
+                    >
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/ticket_man_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/sale_in_sale_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/ripple"
+        android:onClick="onSaleTicketClicked"
+        android:text="购票"
+        android:textColor="@color/bottom_sheet_button_text_color"
+        />
+</LinearLayout>

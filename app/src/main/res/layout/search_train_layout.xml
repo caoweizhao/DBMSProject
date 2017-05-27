@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/source_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:drawablePadding="20dp"
+            android:drawableStart="@drawable/ic_source_search_page"
+            android:gravity="center_vertical"
+            android:text="出发地"
+            android:textColor="#665c5656"
+            />
+
+        <TextView
+            android:id="@+id/source_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:drawableEnd="@drawable/ic_chevron_right_black_24dp"
+            android:gravity="center_vertical"
+            android:text="北京"
+            android:transitionName="source_pos"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#66666666"/>
+
+    <RelativeLayout
+        android:id="@+id/destination_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:drawablePadding="20dp"
+            android:drawableStart="@drawable/ic_destination_search_page"
+            android:gravity="center_vertical"
+            android:text="目的地"
+            android:textColor="#665c5656"
+            />
+
+        <TextView
+            android:id="@+id/destination_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:drawableEnd="@drawable/ic_chevron_right_black_24dp"
+            android:gravity="center_vertical"
+            android:text="广州"
+            android:transitionName="destination_pos"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#66666666"/>
+
+    <RelativeLayout
+        android:id="@+id/date_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:drawablePadding="20dp"
+            android:drawableStart="@drawable/ic_date"
+            android:gravity="center_vertical"
+            android:text="出发日期"
+            android:textColor="#665c5656"
+            />
+
+        <TextView
+            android:id="@+id/date_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:drawableEnd="@drawable/ic_chevron_right_black_24dp"
+            android:gravity="center_vertical"
+            android:transitionName="start_date"
+            tools:text="2017-05-22"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/search_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ripple"
+        android:text="查询班次"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        />
+</LinearLayout>
